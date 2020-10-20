@@ -1,0 +1,28 @@
+sc='Nigeria'
+sl='Fulani'
+ss='Katsina'
+sy='2002'
+country=[]
+year=[]
+Language=[]
+state=[]
+students=[{'name':'Ahmad','year':'2002','state':'Katsina','country':'Nigeria','Language':'Fulani'},
+{'name':'Musa','year':'2002','state':'Kaduna','country':'Nigeria','Language':'Fulani'},
+{'name':'Abdurrahman','year':'2004','state':'Washinton DC','country':'America','Language':'Igbo'},
+{'name':'Aliyu','year':'2002','state':'katsina','country':'Nigeria','Language':'Hausa'},
+{'name':'Tunde','year':'2004','state':'Enugu','country':'Nigeria','Language':'Yuroba'},
+{'name':'Tariq','year':'2006','state':'Katsina','country':'Nigeria','Language':'Fulani'}]
+while len(country)<3 or len(Language)<2 or len(state) <2 or len(year)<2:
+    for student in students:
+        if student.get('country')==sc:
+            country.append(student.get('name'))
+        if student.get('year')==sy:
+            year.append(student.get('name'))
+        if student.get('state')==ss:
+            state.append(student.get('name'))
+        if student.get('Language')==sl:
+            Language.append(student.get('name'))
+print("country:",country)
+print("year:",year)
+print("state:",state)
+print("Language:",Language)
